@@ -14,7 +14,7 @@ Assuming in the current folder there is an `index.adoc` file:
 ```sh
 docker run -it \
            --rm \
-            -v `pwd`/src \
+            -v `pwd`:/src \
             -v `pwd`:/out \
             bmst/chm-generator
 ```
